@@ -139,7 +139,18 @@ footer p {
   background: url(<path-to-image>), lightgray -1.24px 0px/101.653% 141.566% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.characters img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.4);
+}
+
+.characters .gryffindor img { border-color: var(--red); }
+.characters .slytherin img  { border-color: var(--green); }
+.characters .ravenclaw img  { border-color: var(--blue); }
+.characters .hufflepuff img { border-color: var(--yellow); }
+
 .characters p {
   text-align: center;
   color: var(--Gold, #b99049);
